@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::root {
+    font-size: 62.5%;
+}
+
+body {
+    /* font-family: 'Caveat Brush', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
