@@ -79,8 +79,7 @@ nav {
     padding: 1rem 2rem;
     font-size: 1.8rem;
     color: var(--primary-color);
-    /* text-transform: uppercase; */
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 nav ul {
@@ -141,22 +140,18 @@ nav ul {
     font-size: 3rem;
 }
 
-/* .motto {
-    display: none;
-} */
-
 /* section about */
+/* common class for all sections*/
 .wrapper {
     margin: 0 auto;
     padding: 1rem;
-    width: 90%;
+    width: 95%;
     max-width: 1000px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .about {
-    background-color: #eee;
-    font-size: 3rem;
+    background-color: #ddd;
 }
 
 .about-container {
@@ -166,50 +161,128 @@ nav ul {
     align-items: center;
 }
 
+.card-about {
+    margin: 1px 0;
+    background-color: #eee;
+    box-shadow: 2px 2px 2px rgb(167, 167, 167);
+}
+
 .about-image {
-    margin: 1rem;
-    padding: 1rem;
-    width: 250px;
-    height: 250px;
-    background-image: url('./img/handsome-guy.JPG');
-    background-position: center;
-    background-size: cover;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .about-info {
-    margin: 1rem;
-    padding: 2rem;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.about-info p {
+    padding: .5rem 0;
+}
+
+.about button {
+    display: none;
 }
 
 /* section experience */
-/* .info-header {
-    margin: 0.3rem 0;
-    font-size: 1.6rem;
-    font-weight: lighter;
-    color: #2291a5;
+/* rozważyć stworzenie wspólnego kontenera do środkowania we flexie */
+.experience {
+    background-color: #eee;
 }
 
-.info {
-    margin: 0.2rem 0;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    word-spacing: 1px;
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-info {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #ddd;
+    box-shadow: 2px 2px 2px rgb(167, 167, 167);
+}
+
+.work-info h3 {
+    margin: 1rem 0 .5rem;
+    font-size: 1.6rem;
+    word-spacing: 3px;
+    color: var(--secondary-color);
 }
 
 .company-name {
-    line-height: 1.2;
-    word-spacing: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    word-spacing: 2px;
 }
 
 .work-descr {
-    margin: .7rem 0;
+    font-size: 1.4rem;
 }
 
-.position {
-    font-size: 1.3rem;
-} */
+/* section skills */
+.skills {
+    background: rgb(76, 88, 173);
+    background: linear-gradient(327deg, rgba(76, 88, 173, 1) 0%, rgba(34, 145, 165, 1) 70%);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.tech {
+    margin: 2rem 0;
+}
+
+.tech h2 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.fab {
+    font-size: 4.5rem;
+}
+
+.tech span {
+    font-size: 3rem;
+}
+
+.skills-fonts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.education-box h3 {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.school-info {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
 
 @media (min-width: 576px) {
+
     /* navigation */
     .name {
         font-size: 1.8rem;
@@ -233,14 +306,44 @@ nav ul {
         font-size: 3.6rem;
     }
 
+    /* section about */
+    .card-about {
+        position: relative;
+    }
+
+    .about-image {
+        position: absolute;
+        top: -5%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+        border: 5px solid #eee;
+        border-radius: 50%;
+    }
+
+    .about-info {
+        margin: 5rem 0 1rem;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .about-info p {
+        padding: .5rem 0;
+    }
+
 }
 
 @media (min-width: 768px) {
+
     /* navigation */
     .name {
         font-size: 1.6rem;
     }
-    
+
     .navbar {
         display: none;
     }
@@ -255,7 +358,7 @@ nav ul {
         justify-content: space-around;
         list-style: none;
     }
-    
+
     .link {
         position: relative;
         padding: 1rem 1rem;
@@ -308,36 +411,32 @@ nav ul {
         border-bottom: 1px solid var(--primary-color);
         border-right: 1px solid var(--primary-color);
     }
+
     /* header */
     .header-text h1 {
         font-size: 3rem;
     }
 
-    .about-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    /* stworzyć wspólną klasę, zostawić tylko różne kolory */
+    .about button {
+        display: block;
+        margin-top: 5rem;
+        padding: .5rem 1rem;
+        background: transparent;
+        border: 0;
     }
 
-    .about-image {
-        margin: 1rem;
-        padding: 1rem;
-        width: 250px;
-        height: 250px;
-        background-image: url('./img/handsome-guy.JPG');
-        background-position: center;
-        background-size: cover;
-    }
-
-    .about-info {
-        margin: 1rem;
-        padding: 2rem;
+    .about button a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        cursor: pointer;
+        font-size: 3rem;
     }
 
 }
 
 @media (min-width: 992px) {
+
     /* navigation */
     .name {
         font-size: 1.8rem;
@@ -361,6 +460,7 @@ nav ul {
 }
 
 @media (min-width: 1200px) {
+
     /* navigation */
     nav ul {
         width: 50%;
@@ -373,6 +473,7 @@ nav ul {
 }
 
 @media (min-width: 1400px) {
+
     /* navigation */
     nav ul {
         width: 42%;
@@ -380,6 +481,7 @@ nav ul {
 }
 
 @media (min-width: 1600px) {
+
     /* navigation */
     nav ul {
         width: 50%;
