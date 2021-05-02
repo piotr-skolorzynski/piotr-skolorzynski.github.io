@@ -1,5 +1,5 @@
 const navbarBtn = document.querySelector('.navbar');
-const nav = document.querySelector('.nav-mobile');
+const navMobile = document.querySelector('.nav-mobile');
 const navLinks = document.querySelectorAll('.nav-list');
 
 const listenLinks = () => {
@@ -10,7 +10,7 @@ const listenLinks = () => {
 
 //zapytaj czy takie rozwiązanie jest dobre czy też lepiej stworzyć oddzielną funkcję do usuwania klasy show po kliknięciu 
 const handleNavigation = () => {
-    nav.classList.toggle('show');
+    navMobile.classList.toggle('show');
     listenLinks();
 };
 
