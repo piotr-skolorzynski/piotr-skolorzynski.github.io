@@ -19,14 +19,31 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* class to show .nav-mobile on click */
+.show {
+    left: 0;
+}
+
+/* background with secondary color */
+.bcg-1 {
+    background-color: var(--secondary-color);
+}
+
+/* background with third color */
+.bcg-2 {
+    background-color: var(--third-color);
+}
+
 /* navigation */
-nav {
+.nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
     position: fixed;
     padding: 3rem 1rem;
     z-index: 10;
+    opacity: .95;
+    transition: background-color .5s;
 }
 
 .name {
@@ -68,11 +85,6 @@ nav {
     background: linear-gradient(327deg, rgba(76, 88, 173, 1) 0%, rgba(34, 145, 165, 1) 70%);
     transition: left .5s;
     z-index: -1;
-}
-
-/* class to show .nav-mobile on click */
-.show {
-    left: 0;
 }
 
 .nav-item {
