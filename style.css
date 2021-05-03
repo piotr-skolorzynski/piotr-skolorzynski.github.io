@@ -11,6 +11,7 @@
     scroll-behavior: smooth;
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(34, 145, 165);
+    --third-color: rgb(76, 88, 173);
 }
 
 body {
@@ -355,6 +356,31 @@ nav ul {
 
 .card-text p {
     font-size: 1.4rem;
+}
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--third-color);
+}
+
+footer h3,
+footer p,
+footer a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.fa-github-square {
+    font-size: 1.6rem;
 }
 
 @media (min-width: 576px) {
