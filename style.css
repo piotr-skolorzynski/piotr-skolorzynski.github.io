@@ -64,12 +64,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(76, 88, 173);
+    background: var(--third-color);
     background: linear-gradient(327deg, rgba(76, 88, 173, 1) 0%, rgba(34, 145, 165, 1) 70%);
     transition: left .5s;
     z-index: -1;
 }
 
+/* class to show .nav-mobile on click */
 .show {
     left: 0;
 }
@@ -103,7 +104,7 @@ nav ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(76, 88, 173);
+    background: var(--third-color);
     background: linear-gradient(327deg, rgba(76, 88, 173, .7) 0%, rgba(34, 145, 165, .65) 70%);
     z-index: -1;
 }
@@ -136,10 +137,10 @@ nav ul {
 }
 
 .header-text button a {
-    text-decoration: none;
-    color: var(--primary-color);
-    cursor: pointer;
     font-size: 3rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* section about */
@@ -164,13 +165,10 @@ nav ul {
 }
 
 .card-about {
-    margin: 1px 0;
     background-color: #eee;
-    box-shadow: 2px 2px 2px rgb(167, 167, 167);
-}
-
-.about-image {
-    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgb(167, 167, 167);
 }
 
 .about-image img {
@@ -207,10 +205,16 @@ nav ul {
 }
 
 .work-info {
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 1.5rem;
     background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: 2px 2px 2px rgb(167, 167, 167);
+}
+
+.work-info h1 {
+    font-size: 1.8rem;
 }
 
 .work-info h3 {
@@ -232,7 +236,7 @@ nav ul {
 
 /* section skills */
 .skills {
-    background: rgb(76, 88, 173);
+    background: var(--third-color);
     background: linear-gradient(327deg, rgba(76, 88, 173, 1) 0%, rgba(34, 145, 165, 1) 70%);
 }
 
@@ -244,27 +248,32 @@ nav ul {
     color: var(--primary-color);
 }
 
-.tech {
+.technologies {
+    width: 90%;
+}
+
+.tech-wrapper {
     margin: 2rem 0;
 }
 
-.tech h2 {
+.tech-wrapper h2 {
     margin: 2rem 0;
     text-align: center;
     font-size: 1.6rem;
+}
+
+.skills-fonts {
+    display: flex;
+    justify-content: space-between;
 }
 
 .fab {
     font-size: 4.5rem;
 }
 
-.tech span {
-    font-size: 3rem;
-}
-
-.skills-fonts {
-    display: flex;
-    justify-content: space-between;
+.tech-wrapper span {
+    align-self: center;
+    font-size: 2.6rem;
 }
 
 .education-box {
@@ -293,31 +302,30 @@ nav ul {
 
 .card {
     position: relative;
-    margin: 1rem;
-    height: 75vh;
-    width: 90%;
+    margin: .7rem 0;
+    height: 30vh;
+    width: 95%;
     text-align: center;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
     overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
 }
 
 .card button {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: .5rem;
+    right: .5rem;
     padding: 2rem;
     background: transparent;
-    border: none;
+    font-size: 2rem;
     color: var(--primary-color);
-    font-size: 3rem;
+    border: none;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     cursor: crosshair;
     z-index: 100;
 }
-
 
 .card-one {
     background-image: url('./img/card-one.jpg');
@@ -333,7 +341,7 @@ nav ul {
 
 .card-text {
     position: absolute;
-    padding: 4rem 2rem;
+    padding: 2rem 1.5rem;
     height: 100%;
     width: 100%;
     display: flex;
@@ -350,8 +358,12 @@ nav ul {
 }
 
 .card-text h1 {
-    font-size: 1.8rem;
     margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.card-text h3 {
+    margin-bottom: 0.5rem;
 }
 
 .card-text p {
@@ -381,6 +393,11 @@ footer a {
 
 .fa-github-square {
     font-size: 1.6rem;
+}
+
+footer p:last-child {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
 }
 
 @media (min-width: 576px) {
