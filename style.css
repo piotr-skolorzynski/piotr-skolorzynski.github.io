@@ -37,10 +37,10 @@ body {
 
 /* navigation */
 .nav {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    position: fixed;
     padding: 2rem 1rem;
     opacity: .95;
     transition: background-color .5s;
@@ -102,7 +102,7 @@ body {
     text-decoration: none;
 }
 
-nav ul {
+.nav ul {
     display: none;
 }
 
@@ -155,7 +155,7 @@ nav ul {
 }
 
 .header-text button a {
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
@@ -308,6 +308,10 @@ nav ul {
 }
 
 /* section hobbies */
+.hobbies {
+    background-color: #eee;
+}
+
 .hobbies-container {
     display: flex;
     flex-direction: column;
@@ -420,6 +424,20 @@ footer {
     padding-top: 2.5rem;
     padding-bottom: 0;
     text-align: center;
+}
+
+@media (min-width: 375px) {
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .header-text p {
+        font-size: 1.4rem;
+    }
+
+    .header-text h1 {
+        font-size: 2.2rem;
+    }
 }
 
 @media (min-width: 576px) {
@@ -574,8 +592,8 @@ footer {
         display: none;
     }
 
-    nav ul {
-        width: 67%;
+    .nav ul {
+        width: 70%;
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -584,7 +602,7 @@ footer {
     .link {
         position: relative;
         padding: 1rem 1rem;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 2.5;
         color: var(--primary-color);
         text-decoration: none;
@@ -675,23 +693,23 @@ footer {
 
     /* navigation */
     .name {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
-    nav ul {
-        width: 58%;
+    .nav ul {
+        width: 60%;
     }
 
     .link {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .header-text p {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .header-text h1 {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
     }
 
     /* section skills */
@@ -753,7 +771,7 @@ footer {
 @media (min-width: 1200px) {
 
     /* navigation */
-    nav ul {
+    .nav ul {
         width: 50%;
     }
 
@@ -767,7 +785,7 @@ footer {
 
     /* navigation */
     nav ul {
-        width: 42%;
+        width: 40%;
     }
 
     /* section hobbies */
