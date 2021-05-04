@@ -208,7 +208,6 @@ nav ul {
 }
 
 /* section experience */
-/* rozważyć stworzenie wspólnego kontenera do środkowania we flexie */
 .experience {
     background-color: #eee;
 }
@@ -265,7 +264,7 @@ nav ul {
 }
 
 .technologies {
-    width: 90%;
+    width: 80%;
 }
 
 .tech-wrapper {
@@ -273,7 +272,7 @@ nav ul {
 }
 
 .tech-wrapper h2 {
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     text-align: center;
     font-size: 1.6rem;
 }
@@ -283,7 +282,7 @@ nav ul {
     justify-content: space-between;
 }
 
-.fab {
+.skills .fab {
     font-size: 4.5rem;
 }
 
@@ -495,6 +494,44 @@ footer {
         font-size: 1.6rem;
     }
 
+    /* section skills */
+
+    .tech-wrapper {
+        margin: 3rem 0;
+    }
+
+    .tech-wrapper h2 {
+        margin: 3rem 0;
+        font-size: 2rem;
+    }
+
+    .skills .fab {
+        font-size: 5.5rem;
+    }
+
+    .tech-wrapper span {
+        font-size: 3rem;
+    }
+
+    .education-box {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .education-box h3 {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .school-info {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .school-info p {
+        font-size: 1.6rem;
+    }
+
     /* footer */
     footer {
         display: flex;
@@ -606,20 +643,17 @@ footer {
         font-size: 3rem;
     }
 
-    /* stworzyć wspólną klasę, zostawić tylko różne kolory */
-    .about button {
-        display: block;
-        margin-top: 5rem;
-        padding: .5rem 1rem;
-        background: transparent;
-        border: 0;
+    /* section skills */
+    .technologies {
+        width: 65%;
     }
 
-    .about button a {
-        text-decoration: none;
-        color: var(--secondary-color);
-        cursor: pointer;
-        font-size: 3rem;
+    .skills .fab {
+        font-size: 6rem;
+    }
+
+    .tech-wrapper span {
+        font-size: 3.2rem;
     }
 
     /* section hobbies */
@@ -658,6 +692,50 @@ footer {
 
     .header-text h1 {
         font-size: 3.2rem;
+    }
+
+    /* section skills */
+    .technologies {
+        width: 50%;
+    }
+
+    .tech-wrapper {
+        margin: 4rem 0;
+    }
+
+    .tech-wrapper h2 {
+        margin: 3.5rem 0;
+        font-size: 2.2rem;
+    }
+
+    .skills .fab {
+        font-size: 6rem;
+    }
+
+    .tech-wrapper span {
+        font-size: 3.2rem;
+    }
+
+    .education-box {
+        padding: 1.5rem;
+    }
+
+    .education-box h3 {
+        margin: 2.5rem 0;
+        font-size: 2.2rem;
+    }
+
+    .school-info {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .school-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .school-info p {
+        font-size: 1.6rem;
     }
 
     /* section hobbies */
