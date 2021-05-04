@@ -357,7 +357,7 @@ nav ul {
 
 .card-text {
     position: absolute;
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
     height: 100%;
     width: 100%;
     display: flex;
@@ -387,23 +387,29 @@ nav ul {
 }
 
 /* footer */
-
 footer {
-    margin: 0 auto;
-    padding: 2rem;
     background-color: var(--third-color);
 }
 
-footer h3,
-footer p,
-footer a {
+.contact {
+    padding: 2rem;
+    min-height: 30vh;
+}
+
+.contact h3,
+.contact p,
+.contact a {
     display: block;
     padding: 1rem;
     font-size: 1.6rem;
     color: var(--primary-color);
 }
 
-footer a {
+.contact h3 {
+    text-align: center;
+}
+
+.contact a {
     text-decoration: none;
 }
 
@@ -411,9 +417,10 @@ footer a {
     font-size: 1.6rem;
 }
 
-footer p:last-child {
+.contact p:last-child {
     padding-top: 2.5rem;
     padding-bottom: 0;
+    text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -470,6 +477,49 @@ footer p:last-child {
         padding: .5rem 0;
     }
 
+    .card-text {
+        padding: 4rem 2rem;
+    }
+
+    .card-text h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .card-text h3 {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .card-text p {
+        font-size: 1.6rem;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact h3,
+    .contact p,
+    .contact a {
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .contact h3 {
+        font-size: 2.4rem;
+    }
+
+    .fa-github-square {
+        font-size: 1.8rem;
+    }
+
+    .contact p:last-child {
+        padding-bottom: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -572,6 +622,19 @@ footer p:last-child {
         font-size: 3rem;
     }
 
+    /* section hobbies */
+    .hobbies-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 63vh;
+    }
+
+    .card {
+        margin: 1rem 2rem;
+        height: 40vh;
+    }
 }
 
 @media (min-width: 992px) {
@@ -596,6 +659,17 @@ footer p:last-child {
     .header-text h1 {
         font-size: 3.2rem;
     }
+
+    /* section hobbies */
+    .hobbies-container {
+        padding: 3rem;
+        height: 65vh;
+    }
+
+    .card {
+        margin: 1rem 2rem;
+        height: 45vh;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -617,6 +691,16 @@ footer p:last-child {
     nav ul {
         width: 42%;
     }
+
+    /* section hobbies */
+    .hobbies-container {
+        height: 70vh;
+    }
+
+    .card {
+        margin: 1rem 2.5rem;
+        height: 48vh;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -629,5 +713,14 @@ footer p:last-child {
     /* header */
     .header-img {
         background-image: url('./img/header-1920.jpg');
+    }
+
+    /* section hobbies */
+    .hobbies-container {
+        height: 75vh;
+    }
+
+    .card {
+        height: 50vh;
     }
 }
