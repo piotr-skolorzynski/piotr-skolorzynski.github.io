@@ -11,8 +11,9 @@ let hobbies = document.querySelector('#hobbies');
 
 // scrollspy
 const handleScrollspy = () => {
-    const win = window.pageYOffset;
-    if (about.offsetTop <= win && experience.offsetTop > win) {
+    //70 value of scroll-padding-top in style.css 
+    const win = window.pageYOffset + 76;
+    if ((about.offsetTop) <= win && experience.offsetTop > win) {
         document.querySelector('#link-about').classList.add('active');
         document.querySelector('#link-experience').classList.remove('active');
         document.querySelector('#link-skills').classList.remove('active');
@@ -42,18 +43,19 @@ const handleScrollspy = () => {
 
 // change nav background 
 const handleNavBackground = () => {
-    const currentPosition = window.scrollY;
+    //70 value of scroll-padding-top in style.css 
+    const currentPosition = window.scrollY + 76;
     allSections.forEach(section => {
         if (currentPosition <= 100) {
             nav.classList.remove('bcg-1');
             nav.classList.remove('bcg-2');
-        } else if ((currentPosition > 100 && currentPosition <= 900)) {
+        } else if ((currentPosition > 100 && currentPosition <= 800)) {
             nav.classList.remove('bcg-1');
             nav.classList.add('bcg-2');
-        } else if (section.classList.contains('section-bcg2') && section.offsetTop <= currentPosition + 60) {
+        } else if (section.classList.contains('section-bcg2') && section.offsetTop <= currentPosition) {
             nav.classList.remove('bcg-1');
             nav.classList.add('bcg-2');
-        }  else if (section.classList.contains('section-bcg1') && section.offsetTop <= currentPosition + 60) {
+        }  else if (section.classList.contains('section-bcg1') && section.offsetTop <= currentPosition) {
             nav.classList.remove('bcg-2');
             nav.classList.add('bcg-1');
         }        

@@ -9,6 +9,7 @@
 :root {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: 7.6rem;
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(34, 145, 165);
     --third-color: rgb(76, 88, 173);
@@ -18,7 +19,6 @@ body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
 }
-
 
 /* background with secondary color */
 .bcg-1 {
