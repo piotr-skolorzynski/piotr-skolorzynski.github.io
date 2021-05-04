@@ -12,7 +12,7 @@ let hobbies = document.querySelector('#hobbies');
 // scrollspy
 const handleScrollspy = () => {
     //70 value of scroll-padding-top in style.css 
-    const win = window.pageYOffset + 76;
+    const win = window.pageYOffset + 72;
     if ((about.offsetTop) <= win && experience.offsetTop > win) {
         document.querySelector('#link-about').classList.add('active');
         document.querySelector('#link-experience').classList.remove('active');
@@ -44,7 +44,7 @@ const handleScrollspy = () => {
 // change nav background 
 const handleNavBackground = () => {
     //70 value of scroll-padding-top in style.css 
-    const currentPosition = window.scrollY + 76;
+    const currentPosition = window.scrollY + 72;
     allSections.forEach(section => {
         if (currentPosition <= 100) {
             nav.classList.remove('bcg-1');

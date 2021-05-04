@@ -9,7 +9,7 @@
 :root {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-padding-top: 7.6rem;
+    scroll-padding-top: 7.2rem;
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(34, 145, 165);
     --third-color: rgb(76, 88, 173);
@@ -165,10 +165,8 @@ nav ul {
 /* common class for all sections*/
 .wrapper {
     margin: 0 auto;
-    padding: 1rem;
-    width: 95%;
+    padding: 2rem 1rem;
     max-width: 1000px;
-    min-height: 100vh;
 }
 
 .about {
