@@ -44,6 +44,7 @@ body {
     z-index: 10;
     opacity: .95;
     transition: background-color .5s;
+    z-index: 100;
 }
 
 .name {
@@ -336,7 +337,7 @@ nav ul {
     border: none;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     cursor: crosshair;
-    z-index: 100;
+    z-index: 10;
 }
 
 .card-one {
