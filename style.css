@@ -36,7 +36,7 @@ body {
 
 /* scrollspy */
 .active {
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 /* navigation */
@@ -503,6 +503,10 @@ footer p:last-child {
         line-height: 2.5;
         color: var(--primary-color);
         text-decoration: none;
+    }
+
+    .link:hover {
+        border-bottom: 0;
     }
 
     .link,

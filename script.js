@@ -2,7 +2,6 @@ const navbarBtn = document.querySelector('.navbar');
 const navMobile = document.querySelector('.nav-mobile');
 const nav = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav-list');
-// const navDesktop = document.querySelectorAll('.nav-desktop');
 const allSections = document.querySelectorAll('.section');
 
 let about = document.querySelector('#about');
@@ -11,7 +10,7 @@ let skills = document.querySelector('#skills');
 let hobbies = document.querySelector('#hobbies');
 
 // scrollspy
-const scrollspy = () => {
+const handleScrollspy = () => {
     const win = window.pageYOffset;
     if (about.offsetTop <= win && experience.offsetTop > win) {
         document.querySelector('#link-about').classList.add('active');
@@ -42,7 +41,7 @@ const scrollspy = () => {
 };
 
 // change nav background 
-const handleObserver = () => {
+const handleNavBackground = () => {
     const currentPosition = window.scrollY;
     allSections.forEach(section => {
         if (currentPosition <= 100) {
@@ -61,19 +60,27 @@ const handleObserver = () => {
     });
 };
 
+//if proper media handle navigation
+const handleNavigation = () => {
+    const mobileViewport = window.matchMedia('min-width: 768px');
+    if (mobileViewport) {
+        handleScrollspy();
+        handleNavBackground();
+    }
+};
+
 // close mobile navigation when link is chosen
 const handleLinks = () => {
     navLinks.forEach(item => {
-        item.addEventListener('click', handleNavigation);
+        item.addEventListener('click', handleMobNavigation);
     });
 };
 
 // show or hide mobile navigation if navbar button is clicked
-const handleNavigation = () => {
+const handleMobNavigation = () => {
     navMobile.classList.toggle('show');
     handleLinks();
 };
 
-document.addEventListener('scroll', scrollspy);
-document.addEventListener('scroll', handleObserver);
-navbarBtn.addEventListener('click', handleNavigation);
+document.addEventListener('scroll', handleNavigation);
+navbarBtn.addEventListener('click', handleMobNavigation);
