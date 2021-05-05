@@ -1,0 +1,23 @@
+/* navigation */
+nav ul {
+    width: 50%;
+}
+
+/* header */
+.header-img {
+    background-image: url('../img/header-1920.jpg');
+}
+
+/* section experience */
+.experience {
+    background-image: url('../img/exp-1920.jpg');
+}
+
+/* section hobbies */
+.hobbies-container {
+    height: 75vh;
+}
+
+.card {
+    height: 50vh;
+}

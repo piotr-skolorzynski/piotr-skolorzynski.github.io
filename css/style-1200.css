@@ -1,0 +1,38 @@
+/* navigation */
+.nav ul {
+    width: 50%;
+}
+
+/* header */
+.header-img {
+    background-image: url('../img/header-1280.jpg');
+}
+
+/* section about */
+.about-container {
+    min-height: 75vh;
+}
+
+.about-image {
+    top: 4%;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+}
+
+.about-info {
+    padding: 6rem 3rem 3rem;
+}
+
+.about-info p {
+    word-spacing: 5px;
+    line-height: 1.3;
+    font-size: 2.2rem;
+}
+
+/* section experience */
+.experience {
+    background-image: url('../img/exp-1280.jpg');
+}

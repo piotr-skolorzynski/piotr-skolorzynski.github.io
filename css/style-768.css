@@ -1,0 +1,177 @@
+/* navigation */
+.name {
+    font-size: 1.6rem;
+}
+
+.navbar {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.link {
+    position: relative;
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    line-height: 2.5;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: 0;
+}
+
+.link,
+.link::before,
+.link::after {
+    transition: .3s;
+}
+
+.link::before,
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.link::before {
+    top: -2px;
+    left: -8px;
+    border-top: 0 solid var(--primary-color);
+    border-left: 0 solid var(--primary-color);
+}
+
+.link::after {
+    bottom: -2px;
+    right: -8px;
+    border-bottom: 0 solid var(--primary-color);
+    border-right: 0 solid var(--primary-color);
+}
+
+.link:hover::before,
+.link:hover::after {
+    width: 3rem;
+    height: 50%;
+}
+
+.link:hover::before {
+    border-top: 1px solid var(--primary-color);
+    border-left: 1px solid var(--primary-color);
+}
+
+.link:hover::after {
+    border-bottom: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+}
+
+/* header */
+.header-text h1 {
+    font-size: 3rem;
+}
+
+/* section about */
+.about-container {
+    min-height: 70vh;
+}
+
+.about-image {
+    top: 6%;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+}
+
+.about-info {
+    padding: 2.5rem;
+}
+
+.about-info p {
+    line-height: 1.4;
+    font-size: 2rem;
+}
+
+/* section experience */
+.work-info {
+    margin: 2rem 1rem;
+    padding: 2.5rem;
+}
+
+.work-info h1 {
+    margin-bottom: 3.5rem;
+    font-size: 2.8rem;
+}
+
+.work-info h3 {
+    margin: 2rem 0 1rem;
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+.company-name {
+    font-size: 2rem;
+}
+
+.work-descr {
+    padding: 1rem 0;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+/* section skills */
+.technologies {
+    width: 70%;
+}
+
+.tech-wrapper h2 {
+    margin: 8rem 0;
+    font-size: 2.8rem;
+}
+
+.skills .fab {
+    font-size: 8rem;
+}
+
+
+.tech-wrapper span {
+    font-size: 3.2rem;
+}
+
+.education-box h3 {
+    margin: 8rem 0;
+    font-size: 2.8rem;
+}
+
+.school-info h2 {
+    font-size: 2.2rem;
+}
+
+.school-info p {
+    font-size: 2rem;
+}
+
+/* section hobbies */
+.hobbies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 63vh;
+}
+
+.card {
+    margin: 1rem 2rem;
+    height: 40vh;
+}

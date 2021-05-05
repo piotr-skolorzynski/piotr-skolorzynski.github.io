@@ -1,0 +1,14 @@
+/* navigation */
+nav ul {
+    width: 40%;
+}
+
+/* section hobbies */
+.hobbies-container {
+    height: 70vh;
+}
+
+.card {
+    margin: 1rem 2.5rem;
+    height: 48vh;
+}

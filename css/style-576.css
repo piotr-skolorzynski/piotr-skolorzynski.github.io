@@ -1,0 +1,167 @@
+/* navigation */
+.name {
+    font-size: 1.8rem;
+}
+
+.navbar i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* header */
+.header-text p {
+    font-size: 1.6rem;
+}
+
+.header-text h1 {
+    font-size: 2.8rem;
+}
+
+.header-text button i {
+    font-size: 3.6rem;
+}
+
+/* section about */
+.about-container {
+    min-height: 68vh;
+}
+
+.card-about {
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.about-image img {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #eee;
+    border-radius: 50%;
+}
+
+.about-info {
+    margin: 10rem 0 1rem;
+    padding: 3rem 2rem 2rem;
+}
+
+.about-info p {
+    padding: .5rem 0;
+    word-spacing: 3px;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+
+/* section experience */
+.work-info {
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.work-info h1 {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+}
+
+.work-info h3 {
+    margin: 2rem 0 1rem;
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+.work-descr {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+/* section skills */
+.tech-wrapper {
+    margin: 3rem 0;
+}
+
+.tech-wrapper h2 {
+    margin: 5rem 0;
+    font-size: 2.4rem;
+}
+
+.skills .fab {
+    font-size: 7rem;
+}
+
+.tech-wrapper span {
+    font-size: 3rem;
+}
+
+.education-box {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.education-box h3 {
+    margin: 4rem 0;
+    font-size: 2.4rem;
+}
+
+.school-info {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.school-info h2 {
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+
+.school-info p {
+    font-size: 1.6rem;
+}
+
+/* section hobbies */
+.card-text {
+    padding: 4rem 2rem;
+}
+
+.card-text h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.card-text h3 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.card-text p {
+    font-size: 1.6rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h3,
+.contact p,
+.contact a {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact h3 {
+    font-size: 2.4rem;
+}
+
+.fa-github-square {
+    font-size: 1.8rem;
+}
+
+.contact p:last-child {
+    padding-bottom: 1.5rem;
+}
