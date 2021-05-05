@@ -562,12 +562,12 @@ footer {
     }
 
     .tech-wrapper h2 {
-        margin: 3rem 0;
-        font-size: 2rem;
+        margin: 5rem 0;
+        font-size: 2.4rem;
     }
 
     .skills .fab {
-        font-size: 5.5rem;
+        font-size: 7rem;
     }
 
     .tech-wrapper span {
@@ -580,13 +580,18 @@ footer {
     }
 
     .education-box h3 {
-        margin: 2rem 0;
-        font-size: 2rem;
+        margin: 4rem 0;
+        font-size: 2.4rem;
     }
 
     .school-info {
         margin: 1rem 0;
         padding: 1rem;
+    }
+
+    .school-info h2 {
+        font-size: 1.8rem;
+        padding: .5rem 0;
     }
 
     .school-info p {
@@ -733,15 +738,34 @@ footer {
 
     /* section skills */
     .technologies {
-        width: 65%;
+        width: 70%;
+    }
+
+    .tech-wrapper h2 {
+        margin: 8rem 0;
+        font-size: 2.8rem;
     }
 
     .skills .fab {
-        font-size: 6rem;
+        font-size: 8rem;
     }
 
+    
     .tech-wrapper span {
         font-size: 3.2rem;
+    }
+    
+    .education-box h3 {
+        margin: 8rem 0;
+        font-size: 2.8rem;
+    }
+
+    .school-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .school-info p {
+        font-size: 2rem;
     }
 
     /* section hobbies */
@@ -780,50 +804,6 @@ footer {
 
     .header-text h1 {
         font-size: 3.6rem;
-    }
-
-    /* section skills */
-    .technologies {
-        width: 50%;
-    }
-
-    .tech-wrapper {
-        margin: 4rem 0;
-    }
-
-    .tech-wrapper h2 {
-        margin: 3.5rem 0;
-        font-size: 2.2rem;
-    }
-
-    .skills .fab {
-        font-size: 6rem;
-    }
-
-    .tech-wrapper span {
-        font-size: 3.2rem;
-    }
-
-    .education-box {
-        padding: 1.5rem;
-    }
-
-    .education-box h3 {
-        margin: 2.5rem 0;
-        font-size: 2.2rem;
-    }
-
-    .school-info {
-        margin: 1rem 0;
-        padding: 1rem;
-    }
-
-    .school-info h2 {
-        font-size: 1.8rem;
-    }
-
-    .school-info p {
-        font-size: 1.6rem;
     }
 
     /* section hobbies */
