@@ -183,14 +183,15 @@ body {
 .card-about {
     background-color: #eee;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 2px 2px 5px rgb(167, 167, 167);
 }
 
 .about-image img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .about-info {
@@ -201,10 +202,12 @@ body {
 
 .about-info p {
     padding: .5rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
-.about button {
-    display: none;
+.about-info p:last-child {
+    padding-bottom: 0;
 }
 
 /* section experience */
@@ -448,16 +451,18 @@ footer {
 }
 
 @media (min-width: 375px) {
+    /* navigation */
     .name {
         font-size: 1.6rem;
     }
 
+    /* header */
     .header-text p {
         font-size: 1.4rem;
     }
 
     .header-text h1 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -487,50 +492,38 @@ footer {
     }
 
     /* section about */
+    .about-container {
+        min-height: 68vh;
+    }
+
     .card-about {
         position: relative;
     }
 
     .about-image {
         position: absolute;
-        top: -5%;
+        top: 7%;
         left: 75%;
         transform: translate(-50%, -50%);
     }
 
     .about-image img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
         border: 5px solid #eee;
         border-radius: 50%;
     }
 
     .about-info {
-        margin: 5rem 0 1rem;
-        padding: 1rem 2rem;
-        font-size: 1.4rem;
+        margin: 10rem 0 1rem;
+        padding: 3rem 2rem 2rem;
     }
-
+    
     .about-info p {
         padding: .5rem 0;
-    }
-
-    .card-text {
-        padding: 4rem 2rem;
-    }
-
-    .card-text h1 {
-        margin-bottom: 1.5rem;
-        font-size: 2rem;
-    }
-
-    .card-text h3 {
-        margin-bottom: 1rem;
-        font-size: 1.6rem;
-    }
-
-    .card-text p {
-        font-size: 1.6rem;
+        word-spacing: 3px;
+        line-height: 1.5;
+        font-size: 1.8rem;
     }
 
     /* section experience */
@@ -595,6 +588,25 @@ footer {
     }
 
     .school-info p {
+        font-size: 1.6rem;
+    }
+
+    /* section hobbies */
+    .card-text {
+        padding: 4rem 2rem;
+    }
+
+    .card-text h1 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .card-text h3 {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .card-text p {
         font-size: 1.6rem;
     }
 
@@ -707,6 +719,29 @@ footer {
     /* header */
     .header-text h1 {
         font-size: 3rem;
+    }
+
+    /* section about */
+    .about-container {
+        min-height: 70vh;
+    }
+
+    .about-image {
+        top: 6%;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-info {
+        padding: 2.5rem;
+    }
+
+    .about-info p {
+        line-height: 1.4;
+        font-size: 2rem;
     }
 
     /* section experience */
@@ -828,6 +863,30 @@ footer {
     /* header */
     .header-img {
         background-image: url('./img/header-1280.jpg');
+    }
+
+    /* section about */
+    .about-container {
+        min-height: 75vh;
+    }
+
+    .about-image {
+        top: 4%;
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-info {
+        padding: 6rem 3rem 3rem;
+    }
+
+    .about-info p {
+        word-spacing: 5px;
+        line-height: 1.3;
+        font-size: 2.2rem;
     }
 
     /* section experience */
