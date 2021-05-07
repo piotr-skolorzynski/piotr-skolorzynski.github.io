@@ -45,8 +45,13 @@
 }
 
 .about-info {
-    margin: 10rem 0 1rem;
+    margin: 1rem 0 1rem;
     padding: 3rem 2rem 2rem;
+}
+
+.about-info h1 {
+    margin-bottom: 5rem;
+    font-size: 2.8rem;
 }
 
 .about-info p {
@@ -147,21 +152,24 @@ footer {
     align-items: center;
 }
 
-.contact h3,
-.contact p,
-.contact a {
-    padding: 1.5rem;
-    font-size: 1.8rem;
-}
-
 .contact h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
-.fa-github-square {
+.info-wrapper a {
+    font-size: 1.6rem;
+}
+
+.info-wrapper p {
+    padding: 1rem 0;
+    color: var(--primary-color);
     font-size: 1.8rem;
 }
 
-.contact p:last-child {
-    padding-bottom: 1.5rem;
+.info-wrapper .fa-github-square {
+    font-size: 1.8rem;
+}
+
+.year {
+    font-size: 1.5rem;
 }

@@ -197,7 +197,11 @@ body {
 .about-info {
     margin: 1rem 0;
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+}
+
+.about-info h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-info p {
@@ -247,14 +251,12 @@ body {
 .work-info h1 {
     margin-bottom: 2rem;
     font-size: 2rem;
-    text-align: center;
 }
 
 .work-info h3 {
     margin: 1.5rem 0 .5rem;
     font-size: 1.8rem;
     word-spacing: 3px;
-    text-align: center;
 }
 
 .company-name {
@@ -423,29 +425,41 @@ footer {
     min-height: 30vh;
 }
 
-.contact h3,
-.contact p,
-.contact a {
+.contact h3 {
     display: block;
     padding: 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--primary-color);
-}
-
-.contact h3 {
     text-align: center;
 }
 
-.contact a {
-    text-decoration: none;
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.fa-github-square {
+.info-wrapper a {
+    text-decoration: none;
+    color: var(--primary-color);
     font-size: 1.6rem;
 }
 
-.contact p:last-child {
+.info-wrapper p {
+    padding: 1rem 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.info-wrapper .fa-github-square {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.year {
     padding-top: 2.5rem;
     padding-bottom: 0;
+    font-size: 1.2rem;
     text-align: center;
+    color: var(--primary-color);
 }

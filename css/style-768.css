@@ -98,6 +98,11 @@
     padding: 2.5rem;
 }
 
+.about-info h1 {
+    margin-bottom: 5rem;
+    font-size: 2.8rem;
+}
+
 .about-info p {
     line-height: 1.4;
     font-size: 2rem;
