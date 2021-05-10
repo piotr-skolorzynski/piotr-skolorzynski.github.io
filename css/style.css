@@ -416,10 +416,6 @@ body {
 }
 
 /* footer */
-footer {
-    background-color: var(--third-color);
-}
-
 .contact {
     padding: 2rem;
     min-height: 30vh;
