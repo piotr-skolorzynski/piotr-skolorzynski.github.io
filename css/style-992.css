@@ -56,7 +56,8 @@
     font-size: 2rem;
 }
 
-.info-wrapper .fa-github-square {
+.info-wrapper .fa-github-square,
+.fa-linkedin {
     padding: 1rem 0;
     font-size: 2.4rem;
 }

@@ -433,6 +433,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.my-links,
+.my-contact {
+    display: flex;
+    flex-direction: column;
 }
 
 .info-wrapper a {
@@ -447,7 +454,8 @@ body {
     font-size: 1.6rem;
 }
 
-.info-wrapper .fa-github-square {
+.info-wrapper .fa-github-square,
+.fa-linkedin {
     padding: 1rem 0;
     font-size: 1.6rem;
 }
