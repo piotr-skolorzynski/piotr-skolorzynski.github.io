@@ -13,8 +13,7 @@ const yearInfo = document.querySelector('.year span');
 
 // scrollspy
 const handleScrollspy = () => {
-    //74 value close to value of scroll-padding-top in style.css 
-    const win = window.pageYOffset + 74;
+    const win = window.scrollY + nav.offsetHeight;
     if ((about.offsetTop) <= win && experience.offsetTop > win) {
         document.querySelector('#link-about').classList.add('active');
         document.querySelector('#link-experience').classList.remove('active');
@@ -45,13 +44,12 @@ const handleScrollspy = () => {
 
 // change nav background 
 const handleNavBackground = () => {
-    //74 value close to value of scroll-padding-top in style.css 
-    const currentPosition = window.scrollY + 74;
+    const currentPosition = window.scrollY + nav.offsetHeight;
     allSections.forEach(section => {
-        if (currentPosition <= 100) {
+        if (currentPosition <= 3*nav.offsetHeight) {
             nav.classList.remove('bcg-1');
             nav.classList.remove('bcg-2');
-        } else if ((currentPosition > 100 && currentPosition <= 800)) {
+        } else if ((currentPosition > 3*nav.offsetHeight && currentPosition < about.offsetTop)) {
             nav.classList.remove('bcg-1');
             nav.classList.add('bcg-2');
         } else if (section.classList.contains('section-bcg2') && section.offsetTop <= currentPosition) {

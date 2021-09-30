@@ -1,4 +1,8 @@
 /* navigation */
+:root {
+    scroll-padding-top: 8rem;
+}
+
 .name {
     font-size: 2rem;
 }
