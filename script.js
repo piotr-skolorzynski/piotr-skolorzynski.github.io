@@ -4,10 +4,12 @@ const nav = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav-list');
 const allSections = document.querySelectorAll('.section');
 
-let about = document.querySelector('#about');
-let experience = document.querySelector('#experience');
-let skills = document.querySelector('#skills');
-let hobbies = document.querySelector('#hobbies');
+const about = document.querySelector('#about');
+const experience = document.querySelector('#experience');
+const skills = document.querySelector('#skills');
+const hobbies = document.querySelector('#hobbies');
+
+const yearInfo = document.querySelector('.year span');
 
 // scrollspy
 const handleScrollspy = () => {
@@ -86,3 +88,7 @@ const handleMobNavigation = () => {
 
 document.addEventListener('scroll', handleNavigation);
 navbarBtn.addEventListener('click', handleMobNavigation);
+document.addEventListener('DOMContentLoaded', () => {
+    const year = new Date().getFullYear();
+    yearInfo.innerHTML = year;
+})
