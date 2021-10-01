@@ -290,7 +290,7 @@ body {
 }
 
 .technologies {
-    width: 80%;
+    width: 100%;
 }
 
 .tech-wrapper {
@@ -304,26 +304,33 @@ body {
 }
 
 .skills-fonts {
+    line-height: 2.6;
+    padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .skills .fab {
-    font-size: 4.5rem;
+    align-self: center;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    font-size: 4rem;
 }
 
 .tech-wrapper span {
+    margin: 0 .5rem;
     align-self: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
 }
 
 .education-box {
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .education-box h3 {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
     text-align: center;
     font-size: 1.6rem;
 }
@@ -438,8 +445,11 @@ body {
 
 .my-links,
 .my-contact {
+    width: 100%;
+    padding-left: 1.2rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .info-wrapper a {

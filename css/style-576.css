@@ -94,16 +94,17 @@
 }
 
 .tech-wrapper h2 {
-    margin: 5rem 0;
+    margin: 4rem 0;
     font-size: 2.4rem;
 }
 
 .skills .fab {
-    font-size: 7rem;
+    font-size: 6rem;
+    margin: 0 2rem;
 }
 
 .tech-wrapper span {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .education-box {
@@ -168,6 +169,11 @@ footer {
     padding: 1rem 0;
     color: var(--primary-color);
     font-size: 1.8rem;
+}
+
+.my-links,
+.my-contact {
+    width: 100%;
 }
 
 .info-wrapper .fa-github-square,
